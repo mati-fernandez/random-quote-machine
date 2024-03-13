@@ -29,18 +29,20 @@ function App() {
     <div id="quote-box">
       <p id="text">{quote}</p>
       <p id="author">{author}</p>
-      <button id="new-quote" onClick={handleNewQuote}>
-        New quote...
-      </button>
-      <a
-        href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(
-          `${quote} - ${author}`
-        )}`}
-        target="_blank"
-        id="tweet-quote"
-      >
-        Post to X
-      </a>
+      <div id="buttons">
+        <button id="new-quote" onClick={handleNewQuote}>
+          New quote...
+        </button>
+        <a
+          href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(
+            `${quote} - ${author}`
+          )}`}
+          target="_blank"
+          id="tweet-quote"
+        >
+          <img className="x" src="x.svg" alt="logo-x" />
+        </a>
+      </div>
     </div>
   );
 }
