@@ -9,7 +9,7 @@ body {
   margin: 0;
   display: flex;
   place-items: center;
-  min-width: 320px;
+  min-width: 100vw;
   min-height: 100vh;
   background-color: #242424;
 }
@@ -77,4 +77,16 @@ p {
 .x {
   max-width: 15px;
   padding-top: 3px;
+}
+
+@media (max-aspect-ratio: 12/16) {
+  #quote-box {
+    max-width: 17rem;
+  }
+}
+
+@media (max-aspect-ratio: 6/16) {
+  #quote-box {
+    max-width: 11rem;
+  }
 }
