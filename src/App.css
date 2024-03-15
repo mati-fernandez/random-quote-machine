@@ -80,13 +80,19 @@ p {
 }
 
 @media (max-aspect-ratio: 12/16) {
+  body {
+    min-height: 80vh;
+  }
+
   #quote-box {
-    max-width: 17rem;
+    font-size: 16px;
+    max-width: 17em;
   }
 }
 
 @media (max-aspect-ratio: 6/16) {
   #quote-box {
-    max-width: 11rem;
+    font-size: 16px;
+    max-width: 11em;
   }
 }
